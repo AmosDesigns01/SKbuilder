@@ -1,0 +1,23 @@
+.player{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.react-player{
+    border-radius: 10rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.playerbg{
+    position: absolute;
+    top: 25%;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(18, 18, 18, 0.5));
+    width: 45%;
+    height: 40vh;
+    border-radius: 10rem;
+    z-index: -2;
+}

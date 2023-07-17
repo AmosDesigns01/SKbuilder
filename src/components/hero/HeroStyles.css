@@ -1,0 +1,50 @@
+.hero{
+    width: 100%;
+    height: 100%;
+}
+
+.homeHero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(29, 71, 52, 0.3), rgba(29, 71, 52, 0.6)), url("../../assests/bgpattern.png");
+    background-size: cover;
+    background-position: right;
+    background-position: top;
+    object-fit: cover;
+}
+
+.hero-text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-text h1{
+    font-size: 4rem;
+    z-index: 50;
+}
+
+.hero-text p{
+    margin: 2rem 0 2rem 0;
+    width: 48%;
+    line-height: 1.5;
+    color: #878787;
+}
+
+.hero-text .right{
+    margin-top: 10rem;
+    cursor: pointer;
+    z-index: -50;
+}
+
+.hero-text .right img{
+    transition: all 0.5s ease-in-out;
+}
+
+.hero-text .right img:hover{
+    width: 38rem;
+}
