@@ -5,6 +5,7 @@ import SliderData  from '../../components/project/imageslider/SliderData';
 
 
 import React from 'react'
+import Quality from "./quality/Quality";
 
 const Project = () => {
   return (
@@ -21,9 +22,9 @@ const Project = () => {
                     and achieve remarkable success in this ambitious home project.</p>
             </div>
         </div>
-        <div className="imgslider">
-            <ImageSlider slides={SliderData} />;
-        </div>
+
+        <ImageSlider slides={SliderData} />
+        <Quality/>
     </div>
   )
 }

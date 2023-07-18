@@ -2,29 +2,30 @@
     display: flex;
     justify-content: center;
     position: relative;
+    padding-bottom: 5rem;
 }
 
 .react-player{
     border-radius: 10rem;
     overflow: hidden;
     cursor: pointer;
-    z-index: -1;
+    /* z-index: -3; */
 }
 
 .playerbg{
     position: absolute;
-    top: 10%;
+    top: 20%;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(18, 18, 18, 0.5));
-    width: 40%;
+    width: 45%;
     height: 40vh;
     border-radius: 15rem;
-    z-index: -2;
+    z-index: -10;
 }
 
 .playerText{
+    position: absolute;
     text-align: center;
-    margin-top: -2rem;
-    z-index: 5;
+    bottom: 3rem;
     color: #fff;
     font-size: 3rem;
     font-weight: 200;

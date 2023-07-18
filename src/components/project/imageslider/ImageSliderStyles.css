@@ -7,9 +7,7 @@
   
   .image {
     width: 850px;
-    height: 350px;
-    clip-path: polygon(7% 1, 93% 0, 100% 100%, 0% 100%);
-    border-radius: 15rem 15rem 5rem 5rem;
+    height: 400px;
   }
 
   .imagebtn{

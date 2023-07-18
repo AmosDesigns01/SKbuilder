@@ -4,6 +4,8 @@ import Hero from '../components/hero/Hero';
 import About from '../components/about/About';
 import VideoPlayer from '../components/player/VideoPlayer';
 import Project from '../components/project/Project';
+import Cta from '../components/cta/Cta'
+import Footer from '../components/footer/Footer';
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <About/>
       <VideoPlayer/>
       <Project/>
+      <Cta />
+      <Footer/>
     </div>
   )
 }

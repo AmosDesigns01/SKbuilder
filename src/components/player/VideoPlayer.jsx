@@ -11,8 +11,9 @@ const VideoPlayer = () => {
     <div className="player">
         <ReactPlayer className='react-player' ref={playerRef} url="https://www.youtube.com/watch?v=hs4kIyWOOi8&pp=ygUVaG9tZSBkZWNvcmF0aW5nIGlkZWFz" controls={true} />
         <div className="playerbg"/>
+        <h1 className="playerText">DREAM HOUSE</h1>
     </div>
-    <h1 className="playerText">DREAM HOUSE</h1>
+    
     </>
 
   )
