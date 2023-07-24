@@ -30,6 +30,7 @@
     background-color: #E6E8EE;
     border-radius: 1.5rem;
     padding: 1rem;
+
 }
 
 .nav-menu li{
@@ -88,4 +89,57 @@
 
 .nav-menu-btn li .getstarted{
     color: #fff;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .hamburger{
+        display: initial;
+    }
+
+    .hamburger i{
+        font-size: 2rem;
+    }
+
+    .nav-menu.down, .nav-menu-btn.down{
+        margin-left: -1000%;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: flex-start;
+        border-radius: 0;
+        top: 2.6rem;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        margin-top: 2.8rem;
+        text-align: center;
+        transition: all 1s ease-in-out;
+    }
+
+    .nav-menu-btn{
+        display: block;
+        position: absolute;
+        justify-content: center;
+        top: 29rem;
+        left: 5%;
+        width: 40%;
+        height: 100%;
+        text-align: center;
+        transition: all 1s ease-in-out;
+    }
+
+    .nav-menu li, .nav-menu-btn li{
+        padding: 1rem;
+    }
+
+    .nav-menu-btn li:nth-child(1):hover{
+        border: none;
+    }
 }

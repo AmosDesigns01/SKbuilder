@@ -14,13 +14,19 @@ const NavBar = () => {
     }
   }
 
+  // hamburger state.
+  const [clicked, setClicked] = useState(false);
+  const handleCLick = () => {
+    setClicked(!clicked);
+  }
+
   window.addEventListener("scroll", changeColor)
   return (
     <div className={color? "NavBarItems NavBarItems-bg" : "NavBarItems"}>
         {/* logo */}
         <img className="nav-logo" src={SkLogo} alt="skbuilder logo" />
 
-            <ul className="nav-menu">
+            <ul className= {clicked? "nav-menu" : "nav-menu down"}>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/">Properties</Link></li>
                 <li><Link to="/">Buy <i class="fa-solid fa-angle-down"></i></Link></li>
@@ -28,10 +34,16 @@ const NavBar = () => {
                 <li><Link to="/">Rent <i class="fa-solid fa-angle-down"></i></Link></li>
             </ul>
 
-            <ul className="nav-menu-btn">
+            <ul className={clicked? "nav-menu-btn" : "nav-menu-btn down"}>
                     <li><Link to="/">Login</Link></li>
                     <li><Link to="/" className="getstarted">Get Started</Link></li>
             </ul>
+
+            <div className="hamburger" onClick={handleCLick}>
+              {clicked? 
+                <i class="fa-solid fa-xmark"></i> : 
+                  <i class="fa-solid fa-bars-staggered"></i>}
+            </div>
     </div>
   )
 }

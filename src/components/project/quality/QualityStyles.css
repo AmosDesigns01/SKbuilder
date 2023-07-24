@@ -49,3 +49,35 @@
     cursor: pointer;
     width: 43.5rem;
 }
+
+@media screen and (max-width:1000px) {
+    .quality .head{
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    .quality-text{
+        flex-direction: column;
+    }
+
+    .quality-text .left h1{
+        font-size: 3rem;
+        width: 90%;
+        background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff6b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    .right img{
+        max-width: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quality-text .left p{
+        width: 80%;
+    }
+
+}

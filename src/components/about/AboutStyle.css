@@ -82,3 +82,27 @@
  .about-text .right .experience i{
     color: #E09B6B;
  }
+
+ @media screen and (max-width: 1000px) {
+    .about-text{
+        flex-direction: column;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .about-text .left .head{
+        margin-bottom: 5rem;
+    }
+
+    .right{
+        text-align: center;
+        margin-inline: auto;
+    }
+
+ }

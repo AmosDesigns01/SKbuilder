@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-inline: auto;
   }
   
   .image {
@@ -28,5 +29,12 @@
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
+  }
+
+  @media screen and (max-width: 1000px) {
+    .image{
+      width: 80%;
+      height: auto;
+    }
   }
   

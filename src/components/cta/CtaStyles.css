@@ -17,3 +17,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media screen and (max-width: 1000px) {
+    .ctaText{
+        padding: 3rem;
+    }
+    .ctaText h1{
+        font-size: 3rem;
+        width: 90%;
+    }
+}

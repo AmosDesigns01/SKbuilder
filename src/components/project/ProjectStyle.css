@@ -32,3 +32,13 @@
     line-height: 1.5;
     font-weight: 300;
 }
+
+@media screen and (max-width: 1000px) {
+    .project-text{
+        flex-direction: column;
+    }
+
+    .project-text .right{
+        width: 90%;
+    }
+}
