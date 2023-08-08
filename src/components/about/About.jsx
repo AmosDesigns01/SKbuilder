@@ -10,7 +10,7 @@ const About = () => {
             <div className="left">
                 <div className="head">
                     <img src={AboutImg} width={70} alt="image"/>
-                    <h2>About lisa</h2>
+                    <h2>About lisa lifeStyle</h2>
                 </div>
                 <div className="down">
                     <p>We take great pride in ensuring the satisfaction 
