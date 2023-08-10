@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.cdnfonts.com/css/sofia-pro');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: #000;
 }
+
+:root{
+    --primaryColor: #1D4734;
+    --secondaryColor : #E09B6B;
+}
+
+h1, h2, h3{
+    font-family: 'Satoshi', sans-serif;
+}
+
+p{
+    font-family: 'Sofia Pro', sans-serif;
+}
+
+li a{
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+}
+
+

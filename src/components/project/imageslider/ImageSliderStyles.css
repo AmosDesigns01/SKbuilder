@@ -1,0 +1,40 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+  }
+  
+  .image {
+    width: 850px;
+    height: 400px;
+  }
+
+  .imagebtn{
+    padding: 2rem;
+    cursor: pointer;
+  }
+
+  .imagebtn .left-arrow{
+    margin-right: 2rem;
+  }
+
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+
+  @media screen and (max-width: 1000px) {
+    .image{
+      width: 80%;
+      height: auto;
+    }
+  }
+  

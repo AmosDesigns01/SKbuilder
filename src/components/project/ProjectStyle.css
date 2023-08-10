@@ -1,0 +1,44 @@
+.project{
+    width: 100%;
+    margin-top: 5rem;
+    background: linear-gradient(rgba(29, 71, 52, 0.4), rgba(29, 71, 52, 0.8)), url("../../assests/Frame.png");
+}
+
+
+.project-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+}
+
+.project-text .left .head{
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+}
+
+.project-text .left .head img{
+    margin-right: 1rem;
+}
+
+.project-text .left .head h2{
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+}
+
+.project-text .right{
+    width: 30%;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+    .project-text{
+        flex-direction: column;
+    }
+
+    .project-text .right{
+        width: 90%;
+    }
+}

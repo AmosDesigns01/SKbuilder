@@ -1,0 +1,29 @@
+
+
+.ctaText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.ctaText h1{
+    font-size: 5rem;
+    width: 65%;
+    text-align: center;
+    font-weight: 500;
+    background: linear-gradient(180deg, #ffffff, #ffffff, #ffffff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+    .ctaText{
+        padding: 3rem;
+    }
+    .ctaText h1{
+        font-size: 3rem;
+        width: 90%;
+    }
+}
